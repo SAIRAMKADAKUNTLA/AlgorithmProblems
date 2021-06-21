@@ -8,7 +8,7 @@ namespace Algorithm
     {
         public int i, j;
         public string[] array = { "tom", "tommy", "john", "jamieson", "william" };
-        public  string[] Sort(string[] array)
+        public  void Sort()
         {
             for (i = 1; i <= array.Length; i++)
             {
@@ -22,7 +22,10 @@ namespace Algorithm
                 array[j + 1] = temp;
    
             }
-            return array;
+            foreach(var data in array)
+            {
+                Console.WriteLine(data);
+            }
         }
     }
 }
